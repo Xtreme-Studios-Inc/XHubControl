@@ -1,0 +1,42 @@
+<div class="remote-container">
+  <div class="main-menu">
+    <!-- Button to initiate authentication -->
+    <!-- <button (click)="authenticate()">Authenticate</button> -->
+    @if (this.TV_STATE === 'OFF') {
+    <button class="power-button green" (click)="turnOn()">ON</button>
+    } @else {
+    <!-- Button to turn the TV on -->
+    <button class="power-button red" (click)="turnOff()">OFF</button>
+    }
+  </div>
+  <!-- <button class="power-button">🔑</button> -->
+  <div class="top-controls">
+    <button class="menu-button">Menu</button>
+    <button class="voice-button">🔍</button>
+    <button class="options-button">...</button>
+  </div>
+  <div class="directional-pad">
+    <button class="dpad-button arrow-up" (click)="navigateUp()">⬆</button>
+    <button class="dpad-button arrow-left" (click)="navigateLeft()">⬅</button>
+    <button class="center-button center" (click)="selectItem()"></button>
+    <button class="dpad-button arrow-right" (click)="navigateRight()">➡</button>
+    <button class="dpad-button arrow-down" (click)="navigateDown()">⬇</button>
+  </div>
+  <div class="bottom-controls">
+    <button class="back-button" (click)="goBack()">◀</button>
+    <button class="home-button" (click)="goHome()">🏠</button>
+    <button class="play-pause-button" (click)="playPause()">⏸</button>
+  </div>
+  <div class="volume-controls">
+    <button class="volume-button volume-up" (click)="volumeUp()">➕</button>
+    <button class="mute-button" (click)="mute()">🔇</button>
+    <button class="volume-button volume-down" (click)="volumeDown()">➖</button>
+  </div>
+  <div class="app-shortcuts">
+    <button class="app-button netflix" (click)="openNetflix()">Netflix</button>
+    <button class="app-button disney" (click)="openDisneyPlus()">
+      Disney+
+    </button>
+    <button class="add-app-button" (click)="addAppShortcut()">➕</button>
+  </div>
+</div>

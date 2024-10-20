@@ -1,0 +1,179 @@
+// button {
+//   margin: 0 0.5rem;
+//   padding: 10px;
+//   border: none;
+//   border-radius: 0.4em;
+//   background-color: #727272;
+//   color: white;
+// }
+.main-menu {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  // height: 100%;
+  padding: 4px;
+  background-color: #272727;
+  border-radius: 0.5em;
+  color: white;
+}
+.power-button {
+  // margin: 0 0.5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 2em;
+  // background-color: #727272;
+  color: white;
+  font-size: 1.2em;
+  width: 60px;
+  height: 60px;
+
+  // font-size: 2rem;
+  // color: #f00;
+  // align-self: flex-start;
+}
+
+.green {
+  background-color: #406840;
+}
+
+.red {
+  background-color: #8a3030;
+}
+
+.remote-container {
+  display: inline-flex;
+  box-sizing: border-box;
+
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  // max-width: 300px;
+  // margin: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.directional-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.dpad-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border-radius: 50%;
+
+  background-color: #333;
+  align-self: center;
+  justify-self: center;
+}
+
+.arrow-up {
+  grid-area: 1 / 2;
+  border-radius: 50% 50% 0 0;
+} /* 1st row, 2nd column */
+.arrow-left {
+  grid-area: 2 / 1;
+  border-radius: 50% 0 0 50%;
+} /* 2nd row, 1st column */
+.arrow-right {
+  grid-area: 2 / 3;
+  border-radius: 0 50% 50% 0;
+} /* 2nd row, 3rd column */
+.arrow-down {
+  grid-area: 3 / 2;
+  border-radius: 0 0 50% 50%;
+} /* 3rd row, 2nd column */
+.center {
+  grid-area: 2 / 2;
+  border-radius: 50% 0 50% 0;
+} /* Center, 2nd row, 2nd column */
+
+.center-button {
+  grid-column: 2;
+  grid-row: 2;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.bottom-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.volume-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.volume-button {
+  margin: 5px 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.mute-button {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.app-shortcuts {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.app-button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.add-app-button {
+  background-color: #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
